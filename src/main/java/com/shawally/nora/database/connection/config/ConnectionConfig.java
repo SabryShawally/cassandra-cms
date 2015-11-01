@@ -1,5 +1,5 @@
 
-package com.shawally.nora.connection.config;
+package com.shawally.nora.database.connection.config;
 
 import org.springframework.stereotype.Component;
 
@@ -14,6 +14,9 @@ public class ConnectionConfig {
     
     private String host;
     private int port;
+    private String username;
+    private String password;
+    private String database;
     
     public ConnectionConfig() {
         
@@ -33,5 +36,29 @@ public class ConnectionConfig {
 
     public int getPort() {
         return port;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getDatabase() {
+        return database;
+    }
+
+    public void setDatabase(String database) {
+        this.database = database;
     }
 }

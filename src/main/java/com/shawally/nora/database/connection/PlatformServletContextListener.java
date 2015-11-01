@@ -1,6 +1,7 @@
 
-package com.shawally.nora.connection;
+package com.shawally.nora.database.connection;
 
+import com.shawally.nora.database.Database;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import org.apache.log4j.Logger;

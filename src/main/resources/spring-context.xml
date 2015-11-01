@@ -12,8 +12,17 @@
     <context:annotation-config />
     
     <bean id="connectionConfig"
-          class="com.shawally.nora.connection.config.ConnectionConfig">
+          class="com.shawally.nora.database.connection.config.ConnectionConfig">
         <property name="host" value="localhost"/>
         <property name="port" value="3306"/>
+        <property name="username" value="root"/>
+        <property name="password" value="sabry"/>
+        <property name="database" value="cms"/>
     </bean>
+    
+    <bean id="database"
+          class="com.shawally.nora.database.Database">
+        <property name="databaseProvider" value="CASSANDRA"/>
+    </bean>
+    
 </beans>
